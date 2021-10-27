@@ -1,2 +1,3 @@
 # blockchain_csharp
-A simple blockchain in C#
+Blockchain em C#
+Projeto simples porém funcional e interessante para estudos.
