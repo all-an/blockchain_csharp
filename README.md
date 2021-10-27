@@ -9,6 +9,6 @@ Aprendizado:
 > 
 > MemoryStream (super interessante aprender mais sobre fluxo de memória como objeto)
 > 
-> BinaryWriter (otimização mas ainda estou aprendendo mais sobre o tema)
+> BinaryWriter (otimização utilizando uma "conversão" de tipos primitivos para binário, ainda estou aprendendo mais sobre o tema)
 > 
 > E as funcionalidades de uma blockchain em geral
