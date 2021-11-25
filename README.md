@@ -17,7 +17,7 @@
 > 
 > E as funcionalidades de uma blockchain em geral
 
-> Nota: `Para executar basta clonar e instalar as biblioetecas Nuget abaixo no Visual Studio`  
+> Nota: `Para executar basta clonar e executar no Visual Studio`  
 
 Bibliotecas utilizadas:
 
