@@ -51,15 +51,14 @@ public static byte[] GeradorDoHash(this IBloco bloco) //método gerador do hash
         }
 ```
 
-## Método para Salvar, Inserir e Atualizar o DB
+## Validando bloco
 ```cs
-public Task SalvaDado<T>(string sql, T parametros, string stringDeConexaoDB)
+public static bool ValidarBlocoAnterior(this IBloco bloco, IBloco blocoAnterior) 
         {
-            //conexão com o banco de dados
-            using (IDbConnection conexao = new MySqlConnection(stringDeConexaoDB))
-            {
-                return conexao.ExecuteAsync(sql, parametros);
-            }
+            if (blocoAnterior == null) throw new ArgumentNullException(nameof(blocoAnterior));
+
+            var anterior = blocoAnterior.GeradorDoHash();
+            return blocoAnterior.ValidarBlocoAtual() && bloco.HashAnterior.SequenceEqual(anterior);  
         }
 ```
 
